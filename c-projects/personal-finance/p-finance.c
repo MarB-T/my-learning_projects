@@ -12,7 +12,7 @@ int main(void)
 	putchar('\n');
 	
 	const int relief = 2400;
-	int insurance, nhif, nssf, sacco_savings, monthly_gross_pay, loan, helb;
+	int insurance, nhif, nssf = 1080, sacco_savings, monthly_gross_pay, loan, helb;
 	float tax, taxable_amount, total_deductions, athird, fexp;
 
 	printf("Enter your gross monthly pay: ");
@@ -23,8 +23,8 @@ int main(void)
 	scanf("%d", &loan);
 	printf("Enter SACCO deductions and other savings: ");
 	scanf("%d", &sacco_savings);
-	printf("Enter NSSF amount deducted: ");
-	scanf("%d", &nssf);
+//	printf("Enter NSSF amount deducted: ");
+//	scanf("%d", &nssf);
 	printf("Enter non-taxable insurance you serve, 0 if none: ");
 	scanf("%d", &insurance);
 

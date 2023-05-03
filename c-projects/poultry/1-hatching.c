@@ -35,10 +35,11 @@ int main(int argc, char **argv)
 	
 	printf("Power cost is: %.2f\n", pw_cost);
 	printf("Cost on Hatching day is: %.2f\n", hatch_day_cost);
-	printf("Selling price to make 10 percent profit: %.2f profit: %.2f\n", p10_price, (p10_price * (incub_cap * hatch_rate / 100)));
-	printf("Selling price to make 20 percent profit: %.2f profit: %.2f\n", p20_price, (p20_price * (incub_cap * hatch_rate / 100)));
-	printf("Selling price to make 30 percent profit: %.2f profit: %.2f\n", p30_price, (p30_price * (incub_cap * hatch_rate / 100)));
-	printf("Selling price to make 50 percent profit: %.2f profit: %.2f\n", p50_price, (p50_price * (incub_cap * hatch_rate / 100)));
+	printf("Unit cost on Hatching day is: %.2f\n", (hatch_day_cost / (hatch_rate * incub_cap / 100)));
+	printf("Selling price to make 10%% profit: %.2f Total profit: %.2f\n", p10_price, ((p10_price * (incub_cap * hatch_rate / 100)) - hatch_day_cost));
+	printf("Selling price to make 20%% profit: %.2f Total profit: %.2f\n", p20_price, ((p20_price * (incub_cap * hatch_rate / 100)) - hatch_day_cost));
+	printf("Selling price to make 30%% profit: %.2f Total profit: %.2f\n", p30_price, ((p30_price * (incub_cap * hatch_rate / 100)) - hatch_day_cost));
+	printf("Selling price to make 50%% profit: %.2f Total profit: %.2f\n", p50_price, ((p50_price * (incub_cap * hatch_rate / 100)) - hatch_day_cost));
 
 	return (0);
 }

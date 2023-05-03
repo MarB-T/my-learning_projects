@@ -72,8 +72,9 @@ int get_nhif(int n)
 int main(void)
 {
 	putchar('\n');
-	int insurance, nhif, fexp, nssf, sacco_savings, monthly_gross_pay, loan, helb;
+	int insurance, nhif, fexp, sacco_savings, monthly_gross_pay, loan, helb;
 	const int relief = 2400;
+	const int nssf = 1080;
 	float tax, taxable_amount, total_deductions, athird;
 	printf("Enter your gross monthly pay: ");
 	scanf("%d", &monthly_gross_pay);
@@ -83,8 +84,8 @@ int main(void)
 	scanf("%d", &loan);
 	printf("Enter SACCO deductions and other savings: ");
 	scanf("%d", &sacco_savings);
-	printf("Enter NSSF amount deducted: ");
-	scanf("%d", &nssf);
+//	printf("Enter NSSF amount deducted: ");
+//	scanf("%d", &nssf);
 	printf("Enter non-taxable insurance you serve, 0 if none: ");
 	scanf("%d", &insurance);
 	printf("Enter personal fixed expenses: ");
